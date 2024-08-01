@@ -9,12 +9,12 @@ const perguntas = [
         enunciado:"Quem é o Visconde Bridgerton?",
         alternativas: [
             {
-                texto: "Anthony",
-                afirmacao: "."
+                texto: "Anthony Bridgerton",
+                afirmacao: "1-CORRETA"
             },
             {
-                texto: "Benedict",
-                afirmacao: "."
+                texto: "Benedict Bridgerton",
+                afirmacao: "1-ERRADA"
             }
         ]
     },
@@ -22,12 +22,12 @@ const perguntas = [
         enunciado: "Quem é a melhor amiga de Eloíse Bridgerton?",
         alternativas: [
             {
-                texto: "Penélope F",
-                afirmacao: "."
+                texto: "Penélope Featherington",
+                afirmacao: "2-CORRETA"
             },
             {
                 texto: "Marina Tompsom",
-                afirmacao: "."
+                afirmacao: "2-ERRADA"
             }
             
         ]
@@ -37,11 +37,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Cressida Cowper",
-                afirmacao: "."
+                afirmacao: "3-ERRADA"
             },
             {
                 texto: "Daphne Bridgerton",
-                afirmacao: "."
+                afirmacao: "3-CORRETA"
             }
         ]
     },
@@ -50,11 +50,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Cassandra Clare",
-                afirmacao: "."
+                afirmacao: "4-ERRADA"
             },
             {
                 texto: "Julia Quinn",
-                afirmacao: "."
+                afirmacao: "4-CORRETA"
             }
         ]
     },
@@ -63,11 +63,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Preto",
-                afirmacao: "."
+                afirmacao: "5-CORRETA"
             },
             {
                 texto: "Vermelho",
-                afirmacao: ". "
+                afirmacao: "5-ERRADA"
             }
         ]
     },
@@ -106,7 +106,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Você realmente é um fã?";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
